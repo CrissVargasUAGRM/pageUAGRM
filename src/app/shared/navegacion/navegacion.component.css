@@ -1,0 +1,79 @@
+.bg-danger{
+    background-color: #CE0914 !important; 
+}
+
+.nav-link{
+    color: gainsboro !important;
+    font-weight: bold !important;
+}
+
+.nav-link:hover{
+    color: gray !important;
+}
+
+/*lineas verticales del pie del header*/
+
+.verticalLine {
+    border-left: solid #ffffff 1px;
+}
+
+.ocultar{
+    display: none;
+}
+
+.bg-danger > a:hover{
+    color: black !important;
+    background: #CE0914;
+}
+
+.dropdown-menu{
+    border: none;
+    transition-delay: 1s;
+}
+
+.vertical-sub{
+    width: 72% !important;
+}
+
+/* .navbar-toggler{
+    border-color: whitesmoke;
+    opacity: 0.5;
+} */
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .verticalLine {
+        border-bottom: solid #ffffff 1px;
+        width: 50%;
+    }
+    .dropdown-menu{
+        width: 70%;
+    }
+
+    .ocultar{
+        display: flex;
+        align-content: center;
+        font-weight: bold;
+        position: relative;
+        right: 30px;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .ocultar{
+        display: flex;
+        font-size: 11px;
+        font-weight: bold;
+        position: relative;
+        right: 10px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .ocultar{
+        display: flex;
+        font-size: 9px;
+        font-weight: bold;
+    }
+}

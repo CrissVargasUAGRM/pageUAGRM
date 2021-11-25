@@ -1,0 +1,300 @@
+/* start container social */
+
+.container-fluid {
+  width: 100%;
+  height: 165px;
+  background: #022d6d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__social {
+  width: 20%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__social-p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-style: normal;
+  text-transform: capitalize;
+  font-size: 35px;
+  text-align: center;
+}
+
+.container__social-p > a {
+  text-align: center;
+}
+
+.container__social-icons {
+  display: flex;
+  justify-content: center;
+  margin-left: 44px;
+}
+
+i {
+  color: white;
+  font-size: 40px;
+  margin-right: 17px;
+}
+/* end container social */
+
+/* start container qr */
+.container__qr {
+  margin-left: 1px;
+  width: 10%;
+}
+
+.container__qr img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px black;
+}
+
+/* end container qr */
+
+/* start container line vertical */
+
+.container__line-vertical {
+  width: 112px;
+  height: 0px;
+  border: 1px solid #ffffff;
+  transform: rotate(90deg);
+  margin-left: -42px;
+  width: 10%;
+}
+
+/* end container line vertical */
+
+/* start container about */
+
+.container__about {
+  margin-left: -36px;
+  width: 25%;
+}
+
+.container__about > p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/* end container about */
+
+/* start container address */
+
+.container__address {
+  width: 25%;
+}
+
+.container__address > p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  color: white;
+  line-height: 5px;
+}
+
+/* end container address */
+
+/* start container phone */
+
+.container__phone {
+  width: 10%;
+  margin-top: -66px;
+}
+
+.container__phone > p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 5px;
+  color: white;
+}
+
+/* end container phone */
+
+/* start line hidden in responsive this show */
+
+.container__line-vertical-hidden{
+  display: none;
+}
+
+/* end line hidden */
+
+/* start medias queries */
+@media screen and (max-width: 768px) {
+  .container__social {
+    width: 9%;
+  }
+
+  .container__social-p {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .container__social-icons {
+    margin-left: 27px;
+  }
+
+  i {
+    font-size: 18px;
+  }
+
+  /* *************************** */
+
+  .container__qr {
+    width: 9%;
+  }
+
+  /* *************************** */
+
+  .container__line-vertical {
+    margin-left: -22px;
+  }
+
+  /* *************************** */
+
+  .container__about {
+    margin-left: -27px;
+  }
+
+  .container__about > p {
+    font-size: 13px;
+  }
+
+  /* ************************** */
+
+  .container__address {
+    width: 36%;
+  }
+
+  .container__address > p {
+    font-size: 13px;
+    padding: 2px;
+  }
+
+  /* *************************** */
+
+  .container__phone {
+    width: 11%;
+  }
+
+  .container__phone > p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container-fluid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* ********************************** */
+
+  .container__social {
+    width: 100%;
+    padding: 10px;
+    order: 1;
+  }
+
+  .container__social-p{
+    font-size: 20px;
+  }
+
+  i{
+    font-size: 40px;
+  }
+
+  /* *********************************** */
+
+  .container__qr {
+    width: 100%;
+    padding: 10px;
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container__qr > img{
+    width: 30%;
+    /* margin-left: 148px; */
+  }
+
+  /* *********************************** */
+
+  .container__line-vertical {
+    width: 80%;
+    margin: 0;
+    transform: rotate(0deg);
+    margin: 10px 0;
+    order: 3;
+  }
+
+  /* *********************************** */
+
+  .container__about {
+    width: 100%;
+    margin: 0;
+    order: 7;
+  }
+
+  .container__about > p{
+    text-align: center;
+  }
+
+  /* *********************************** */
+
+  .container__address {
+    width: 100%;
+    order: 4;
+  }
+
+  .container__address > p{
+    text-align: center;
+  }
+
+  /* *********************************** */
+
+  .container__phone {
+    width: 100%;
+    margin: 0;
+    order: 5;
+  }
+
+  .container__phone > p{
+    text-align: center;
+  }
+
+  /* **************************** */
+
+  /* **************************** */
+
+  .container__line-vertical-hidden{
+    display: block;
+    width: 80%;
+    margin: 0;
+    transform: rotate(0deg);
+    margin: 10px 0;
+    border: 1px solid #ffffff;
+    order: 6;
+  }
+
+  /* ***************************** */
+}
+
+@media screen and (min-width: 480px) {
+  
+}
+
+
+

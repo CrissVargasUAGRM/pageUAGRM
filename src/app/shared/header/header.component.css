@@ -1,0 +1,148 @@
+/*Fondo del header*/
+
+.back {
+    background-color: #022D6D;
+    height: 100px;
+}
+
+/*Fondo del pie del navbar porque no en el mismo navbar de arriba? para tener mas flexibilidad*/
+
+.back-nav {
+    background-color: #CE0914;
+    height: 50px;
+}
+
+/*input para el search*/
+
+.form-control {
+    border-radius: 30px;
+}
+
+/*manejar su contenedor del search para jugar con su posicionamiento*/
+
+.text-search {
+    position: absolute;
+    left: 80%;
+    opacity: 0.4;
+    color: white;
+}
+
+
+
+/*linea vertical del logo*/
+
+.vertical-line-logo {
+    width: 3px;
+    background-color: black;
+    height: 90px;
+    float: left;
+    position: relative;
+    left: 93px;
+    top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*texto del menu de navegacion*/
+
+.nav-item>a {
+    color: white;
+}
+
+/*cambia de color cuando se pasa el mouse*/
+
+.nav-item>a:hover {
+    color: gainsboro;
+}
+
+/*contenedor de la imagen de la facultad*/
+
+.logo {
+    position: absolute;
+    background-color: white;
+    width: 250px;
+    height: 100%;
+    left: 0;
+}
+
+/*imagen de la facultad*/
+
+.ficct {
+    width: 80px;
+    padding: 5px;
+}
+
+/*texto FICCT*/
+
+.text {
+    position: relative;
+    bottom: 70px;
+    left: 110px;
+    text-shadow: 1px 1px 2px black;
+}
+
+/*boton del menu responsivo*/
+.navbar-toggler{
+    background-image: white;
+}
+/*medias queries responsive*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .text-search {
+        left: 57%;
+        padding-right: 2px;
+        width: 150px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .ficct {
+        width: 70px;
+        padding: 5px;
+    }
+
+    .vertical-line-logo {
+        left: 80px;
+    }
+
+    .text {
+        position: relative;
+        bottom: 60px;
+        left: 85px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .text-search {
+        left: 60%;
+        padding: 5px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .text-search {
+        left: 60%;
+        padding: 5px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .text-search {
+        left: 75%;
+        padding: 5px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .text-search {
+        left: 80%;
+        padding: 5px;
+    }
+}

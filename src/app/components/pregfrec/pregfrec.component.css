@@ -1,0 +1,178 @@
+.container__preg{
+    width: 100%;
+    height: 740px;
+    background: rgba(2, 45, 109, 0.34);
+    margin-top: 142px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__first{
+    width: 21%;
+    background-image: url("../../../assets/img/Rectangle1.png"), url("../../../assets/img/Vector1.png");
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+.container__second{
+    width: 20%;
+    background-image: url("../../../assets/img/Rectangle2.png"), url("../../../assets/img/Vector2.png");
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+/* contenedores donde van las preguntas frecuentes */
+/* practicaremos responsive designe sin usar medias queries */
+
+.container__preg-principal{
+    width: 59%;
+}
+
+.preg__title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 1);
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 83px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preg__text{
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    text-align: left;
+    color: #000000;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.preg__content{
+    display: grid;
+    padding: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px;
+    flex-grow: 1;
+}
+
+.preg__subtitle{
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+}
+
+/* pie de preguntas frecuentes */
+
+.preg__final{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: top;
+    color: white;
+}
+
+/* medias queries */
+
+@media screen and (max-width: 960px){
+    .preg__title{
+        margin-top: 5px;
+    }
+
+    .preg__content{
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .preg__subtitle{
+        text-align: center;
+    }
+
+    .preg__text{
+        text-align: center;
+    }
+
+    .preg__final{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .preg__title{
+        margin-top: 5px;
+    }
+
+    .preg__content{
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .preg__subtitle{
+        text-align: center;
+    }
+
+    .preg__text{
+        text-align: center;
+    }
+
+    .preg__final{
+        text-align: center;
+        font-size: 11px
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .preg__title{
+        font-size: 20px;
+    }   
+
+    .preg__content{
+        gap: 0;
+    }
+
+    .preg__subtitle{
+        font-size: 14px;
+    }
+
+    .preg__text{
+        font-size: 12px;
+    }
+
+    .preg__final{
+        margin-top: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .preg__content{
+        padding: 0;
+    }
+
+    .preg__final{
+        margin-top: -5px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .preg__subtitle{
+        font-size: 12px;
+    }
+
+    .preg__text{
+        font-size: 10px;
+    }
+
+    .preg__final{
+        margin: 0;
+    }
+}
+
+
+

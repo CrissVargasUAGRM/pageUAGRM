@@ -1,0 +1,19 @@
+<div class="carousel">
+    <div class="carousel__btn">
+        <i class="fas fa-chevron-left" (click)="setBack()"></i>
+        <i class="fas fa-chevron-right" (click)="setNext()"></i>
+    </div>
+    <div class="carousel__content">
+        <ng-container *ngFor="let item of items">
+            <div class="carousel__content-item" 
+            [ngStyle]="{'background-color': 'rgba(242, 26, 56, 0.56)', 'margin-left': item.marginLeft + '%'}">
+                <h1>{{item.title}}</h1>
+            </div>
+        </ng-container>
+    </div>
+    <div class="carousel__steps">
+        <div class="carousel__steps-step carousel__steps-step-{{currentPosition === item.id ? 'active': ''}}"
+             *ngFor="let item of items" (click)="setCurrentPosition(item.id)">
+        </div>
+    </div>
+</div>

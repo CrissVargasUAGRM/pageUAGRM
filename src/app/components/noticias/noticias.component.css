@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 142px;
+  padding-bottom: 50px;
+}
+/* Noticias */
+.container-fluid {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 56px;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 1) !important;
+}
+
+/* carousel */
+.container__carousel {
+  width: 100%;
+  height: 518px;
+  background: rgba(2, 45, 103, 0.49);
+
+}
+.carousel{
+    min-height: 500px;
+}
+
+.carousel .carousel-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+}
+
+.carousel .carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    
+}

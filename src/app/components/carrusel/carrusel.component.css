@@ -1,0 +1,101 @@
+.carousel {
+  width: 100%;
+  height: 305px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 3px 3px 5px black;
+}
+
+.carousel::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.carousel__content {
+  text-align: center;
+  width: 100%;
+  align-self: stretch;
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel__content-item{
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    height: 100%;
+    transition: 1s all ease-in;
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 1;
+    border-bottom: 2px solid white;
+}
+
+.carousel__btn{
+    position: absolute;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+i{
+    opacity: 0.7;
+    color: white;
+    font-size: 60px;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.carousel__steps{
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel__steps-step{
+    height: 8px;
+    width: 25px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: 0.75s all ease-in-out;
+}
+
+.carousel__steps-step:hover{
+    opacity: 0.7;
+    background: white;
+}
+
+.carousel__steps-step:active{
+    opacity: 0.7;
+    background: white;
+}
+
+@media only screen and (max-width: 667px) {
+    h1{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    h1{
+        font-size: 18px;
+    }
+}
