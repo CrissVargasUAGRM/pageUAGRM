@@ -1,0 +1,265 @@
+.container-fluid {
+  width: 100%;
+  background-color: rgba(206, 9, 9, 0.88);
+}
+
+.container__carrera{
+  width: 100%;
+  height: 867px;
+  background-image: url("../../../assets/img/bannerCarreras.png");
+  background-position: center;
+}
+
+.container__vector{
+  width: 100%;
+  height: 867px;
+  background-image: url("../../../assets/img/vectorCarrera1.png"), url("../../../assets/img/vectorCarrera2.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top;
+}
+
+.container__vector-info{
+  width: 42%;
+  height: 98px;
+  background-color: rgba(2, 45, 109, 0.85);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: relative;
+  top: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.vector-info__carrera{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 35px;
+  color: white;
+  padding-left: 10%;
+  margin-top: 15px;
+}
+
+.vector-info__sigla{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 35px;
+  color: white;
+  padding-left: 10%;
+}
+
+.container__vector-about{
+  width: 60%;
+  height: 490px;
+  position: relative;
+  margin: auto;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container__vector-about__img{
+  width: 243px;
+  height: 236px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #C4C4C4;
+  border-radius: 50%;
+  position: relative;
+  right: 100px;
+  z-index: 1;
+}
+
+.imagen-jefatura{
+  width: 80%;
+}
+
+.vector-about__content{
+  background-color: rgba(2, 45, 109, 0.85);
+  height: 248px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45px;
+  position: relative;
+  bottom: 100px;
+}
+
+.vector-about__content1{
+  width: 95%;
+  color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 21px;
+}
+
+.vector-about__content1 p {
+  margin-left: 95px;
+}
+
+.vector-about__content2{
+  width: 95%;
+  color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 21px;
+}
+
+.vector-about__content2 p{
+  margin-left: 84px;
+}
+
+.container__vision{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.vision__vision{
+  width: 392px;
+  height: 238px;
+  margin-top: 5%;
+}
+
+.vision__title{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  color: white;
+}
+
+.vision__mision{
+  width: 392px;
+  height: 238px;
+  margin-top: 5%;
+}
+
+.vision__content{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: white;
+}
+
+.mision__title{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  color: white;
+}
+
+.mision__content{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: white;
+}
+
+.container__malla{
+  width: 100%;
+  height: 1109px;
+  background-color: white;
+  box-shadow: 10px 5px 15px black;
+  display: flex;
+  flex-direction: row;
+}
+
+.container__malla-vector{
+  width: 25%;
+  height: 100%;
+  background-image: url("../../../assets/img/malla_vector.png");
+  background-position: initial;
+  background-repeat: repeat-y;
+  background-size: auto;
+}
+
+.container__curricular{
+  width: 25%;
+}
+
+.curricular__content{
+  position: relative;
+  top: 20%;
+}
+
+.curricular__content-title{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 100%;
+  text-align: center;
+  color: black;
+}
+
+.curricular__content-paragraph{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  color: black;
+}
+
+.container__plan{
+  width: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.malla{
+  width: 90%;
+}
+
+.malla img{
+  width: 100%;
+}
+
+/* medias queries */
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+
+}
+
+@media screen and (max-width: 412px) {
+
+}
