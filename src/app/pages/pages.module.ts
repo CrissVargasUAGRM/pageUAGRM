@@ -10,6 +10,7 @@ import { InginformaticaComponent } from './inginformatica/inginformatica.compone
 import { IngsistemasComponent } from './ingsistemas/ingsistemas.component';
 import { IngredesComponent } from './ingredes/ingredes.component';
 import { SharedModule } from '../shared/shared.module';
+import { FacultadpageComponent } from './facultadpage/facultadpage.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { SharedModule } from '../shared/shared.module';
     FirtspageComponent,
     InginformaticaComponent,
     IngsistemasComponent,
-    IngredesComponent
+    IngredesComponent,
+    FacultadpageComponent
   ],
   imports: [
     CommonModule,

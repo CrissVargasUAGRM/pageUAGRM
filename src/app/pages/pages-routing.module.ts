@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FacultadpageComponent } from './facultadpage/facultadpage.component';
 import { FirtspageComponent } from './firtspage/firtspage.component';
 import { InginformaticaComponent } from './inginformatica/inginformatica.component';
 import { IngredesComponent } from './ingredes/ingredes.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
       { path: 'ingsistemas', component: IngsistemasComponent},
       { path: 'inginformatica', component: InginformaticaComponent},
       { path: 'ingredes', component: IngredesComponent},
+      {path: 'acercade', component: FacultadpageComponent},
       { path: '**', redirectTo: 'inicio'}
     ]
   }

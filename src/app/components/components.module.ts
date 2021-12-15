@@ -4,6 +4,10 @@ import { CarruselComponent } from './carrusel/carrusel.component';
 import { NoticiasComponent } from './noticias/noticias.component';
 import { PregfrecComponent } from './pregfrec/pregfrec.component';
 import { SwiperModule } from 'swiper/angular';
+import { FacultadComponent } from './facultad/facultad.component';
+import { FacultamisvisComponent } from './facultamisvis/facultamisvis.component';
+import { ConsejoComponent } from './consejo/consejo.component';
+import { DocenteComponent } from './docente/docente.component';
 
 
 
@@ -11,7 +15,11 @@ import { SwiperModule } from 'swiper/angular';
   declarations: [
     CarruselComponent,
     NoticiasComponent,
-    PregfrecComponent
+    PregfrecComponent,
+    FacultadComponent,
+    FacultamisvisComponent,
+    ConsejoComponent,
+    DocenteComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +28,11 @@ import { SwiperModule } from 'swiper/angular';
   exports: [
     CarruselComponent,
     NoticiasComponent,
-    PregfrecComponent
+    PregfrecComponent,
+    FacultadComponent,
+    FacultamisvisComponent,
+    ConsejoComponent,
+    DocenteComponent
   ]
 })
 export class ComponentsModule { }
