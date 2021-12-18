@@ -1,0 +1,79 @@
+.container__vision {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.vision__vision {
+    width: 392px;
+    height: 238px;
+    margin-top: 10%;
+}
+
+.vision__title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+}
+
+.vision__mision {
+    width: 392px;
+    height: 238px;
+    margin-top: 10%;
+}
+
+.vision__content {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: white;
+}
+
+.mision__title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+}
+
+.mision__content {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .container__vision {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .container__vision {
+        padding: 20px;
+    }
+    .vision__mision {
+        padding: 10px;
+    }
+    .vision__vision {
+        padding: 10px;
+    }
+}
