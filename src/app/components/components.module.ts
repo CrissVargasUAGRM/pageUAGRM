@@ -8,6 +8,9 @@ import { FacultadComponent } from './facultad/facultad.component';
 import { FacultamisvisComponent } from './facultamisvis/facultamisvis.component';
 import { ConsejoComponent } from './consejo/consejo.component';
 import { DocenteComponent } from './docente/docente.component';
+import { CarrerahistComponent } from './carrerahist/carrerahist.component';
+import { MisionvisionComponent } from './misionvision/misionvision.component';
+import { MallaComponent } from './malla/malla.component';
 
 
 
@@ -19,7 +22,10 @@ import { DocenteComponent } from './docente/docente.component';
     FacultadComponent,
     FacultamisvisComponent,
     ConsejoComponent,
-    DocenteComponent
+    DocenteComponent,
+    CarrerahistComponent,
+    MisionvisionComponent,
+    MallaComponent
   ],
   imports: [
     CommonModule,
@@ -32,7 +38,10 @@ import { DocenteComponent } from './docente/docente.component';
     FacultadComponent,
     FacultamisvisComponent,
     ConsejoComponent,
-    DocenteComponent
+    DocenteComponent,
+    CarrerahistComponent,
+    MisionvisionComponent,
+    MallaComponent
   ]
 })
 export class ComponentsModule { }

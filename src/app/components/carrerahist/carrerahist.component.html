@@ -1,0 +1,30 @@
+<div class="container-fluid px-0">
+    <div class="container__principal">
+        <div class="container__vectores">
+            <div class="carrera">
+                <div class="carrera_nombre">
+                    <p>{{carrera.nombre}}</p>
+                </div>
+                <div class="carrera_sigla">
+                    <p>{{carrera.sigle}}</p>
+                </div>
+            </div>
+
+            <div class="carrera_historia">
+                <div class="imagen_carrera">
+                    <div class="imagen">
+                        <img [src]="carrera.imagen" alt="">
+                    </div>
+                </div>
+                <div class="carrera_texto">
+                    <div class="texto1">
+                        <p>{{carrera.texto1}}</p>
+                    </div>
+                    <div class="texto2">
+                        <p>{{carrera.texto2}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

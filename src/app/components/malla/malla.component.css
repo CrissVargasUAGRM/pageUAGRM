@@ -1,0 +1,76 @@
+.container__malla {
+    width: 100%;
+    background-color: white;
+    box-shadow: 10px 5px 15px black;
+    display: flex;
+    flex-direction: row;
+}
+
+.container__malla-vector {
+    width: 25%;
+    height: auto;
+    background-image: url("../../../assets/img/malla_vector.png");
+    background-position: initial;
+    background-repeat: repeat-y;
+    background-size: auto;
+}
+
+.container__curricular {
+    width: 25%;
+    margin-top: 40px;
+}
+
+.curricular__content {
+    position: relative;
+    top: 20%;
+}
+
+.curricular__content-title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 100%;
+    text-align: center;
+    color: black;
+}
+
+.curricular__content-paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    color: black;
+}
+
+.container__plan {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.malla {
+    width: 90%;
+}
+
+.malla img {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .container__malla {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container__malla-vector {
+        display: none;
+    }
+    .container__curricular {
+        width: 100%;
+    }
+    .container__plan {
+        width: 100%;
+    }
+}
