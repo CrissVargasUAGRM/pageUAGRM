@@ -9,56 +9,35 @@ export class RepositorioComponent implements OnInit {
 
   public semestres: any[] = [
     {
-      semestre: "Primer Sem."
+      semestre: "Primer Semestre"
     },
     {
-      semestre: "Segundo Sem."
+      semestre: "Segundo Semestre"
     },
     {
-      semestre: "Tercer Sem."
+      semestre: "Tercer Semestre"
     },
     {
-      semestre: "Cuarto Sem."
+      semestre: "Cuarto Semestre"
     },
     {
-      semestre: "Quinto Sem."
+      semestre: "Quinto Semestre"
     },
     {
-      semestre: "Sexto Sem."
+      semestre: "Sexto Semestre"
     },
     {
-      semestre: "Septimo Sem."
+      semestre: "Septimo Semestre"
     },
     {
-      semestre: "Octavo Sem."
+      semestre: "Octavo Semestre"
     },
     {
-      semestre: "Noveno Sem."
+      semestre: "Noveno Semestre"
     },
     {
       semestre: "Materias Electivas"
-    },
-  {
-    semestre: "Tercer Sem."
-  },
-  {
-    semestre: "Cuarto Sem."
-  },
-  {
-    semestre: "Quinto Sem."
-  },
-  {
-    semestre: "Sexto Sem."
-  },
-  {
-    semestre: "Septimo Sem."
-  },
-  {
-    semestre: "Octavo Sem."
-  },
-  {
-    semestre: "Noveno Sem."
-  },
+    }
   ];
 
   constructor() { }
