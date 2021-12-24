@@ -11,6 +11,8 @@ import { DocenteComponent } from './docente/docente.component';
 import { CarrerahistComponent } from './carrerahist/carrerahist.component';
 import { MisionvisionComponent } from './misionvision/misionvision.component';
 import { MallaComponent } from './malla/malla.component';
+import { BibliotecaComponent } from './biblioteca/biblioteca.component';
+import { RepositorioComponent } from './repositorio/repositorio.component';
 
 
 
@@ -25,7 +27,9 @@ import { MallaComponent } from './malla/malla.component';
     DocenteComponent,
     CarrerahistComponent,
     MisionvisionComponent,
-    MallaComponent
+    MallaComponent,
+    BibliotecaComponent,
+    RepositorioComponent
   ],
   imports: [
     CommonModule,
@@ -41,7 +45,9 @@ import { MallaComponent } from './malla/malla.component';
     DocenteComponent,
     CarrerahistComponent,
     MisionvisionComponent,
-    MallaComponent
+    MallaComponent,
+    BibliotecaComponent,
+    RepositorioComponent
   ]
 })
 export class ComponentsModule { }

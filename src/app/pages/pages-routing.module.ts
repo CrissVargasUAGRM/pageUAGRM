@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BibliotecadigitalComponent } from './bibliotecadigital/bibliotecadigital.component';
 import { FacultadpageComponent } from './facultadpage/facultadpage.component';
 import { FirtspageComponent } from './firtspage/firtspage.component';
 import { InginformaticaComponent } from './inginformatica/inginformatica.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
       { path: 'inginformatica', component: InginformaticaComponent},
       { path: 'ingredes', component: IngredesComponent},
       {path: 'acercade', component: FacultadpageComponent},
+      { path: 'biblioteca', component: BibliotecadigitalComponent},
       { path: '**', redirectTo: 'inicio'}
     ]
   }

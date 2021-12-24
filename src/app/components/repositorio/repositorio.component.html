@@ -1,0 +1,27 @@
+<div class="container-fluid px-0">
+    <div class="container_grid">
+        <div class="repositorio_content">
+            <div class="content_title">
+                <p>Repositorio de Materias</p>
+            </div>
+            <div class="content_principal">
+                <p>Este repositorio contiene apuntes y material de apoyo utilizado en la Facultad de Ingenieria en Cienciad de la Computacion y Telecomunicaciones dependiente de la Universidad Autónoma Gabriel René Moreno, redactados utilizando \LaTeX. Los
+                    apuntes son hechos con dedicación por estudiantes y docentes de la facultad, la contribución es completamente abierta y sin ningún fin lucrativo.</p>
+            </div>
+        </div>
+        <div class="repositorio_opciones">
+            <div class="repositorio_semestre">
+                <div class="repos_content" *ngFor="let item of semestres">
+                    <div class="repos">
+                        <div class="flecha"></div>
+                        <div class="semestre">
+                            <a href="#">
+                                <p>{{item.semestre}}</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

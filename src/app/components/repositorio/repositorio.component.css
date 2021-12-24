@@ -1,0 +1,182 @@
+.container-fluid {
+    width: 100%;
+    height: 900px;
+    background-color: rgba(2, 45, 109, 0.34);
+}
+
+.container_grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "contenido opciones" "contenido opciones";
+}
+
+.repositorio_content {
+    grid-area: contenido;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 37px;
+    text-align: center;
+    color: white;
+    padding: 12px;
+}
+
+.content_principal {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 25px;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+    text-align: left;
+    width: 490px;
+    margin-left: 15px;
+}
+
+.repositorio_opciones {
+    grid-area: opciones;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.repositorio_semestre {
+    width: 550px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 100px);
+}
+
+.repos_content{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.repos{
+    width: 220px;
+    height: 50px;
+    background-color: rgba(206, 9, 20, 0.97);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+.flecha{
+    width: 0;
+    height: 0;
+    border-left: 30px solid #c4c4c4;
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid transparent;
+}
+
+.semestre{
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.semestre a{
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes efecto {
+    from {font-size: 16px;}
+    to {font-size: 17px;}
+}
+
+.semestre a:hover{
+    animation-name: efecto;
+    animation-duration: 1s;
+}
+
+@media screen and (max-width: 960px){
+    .content_title{
+        font-size: 28px;
+        line-height: 30px;
+        padding: 10px;
+    }
+
+    .content_principal{
+        font-size: 20px;
+        line-height: 25px;
+        width: 400px;
+    }
+
+    .repositorio_semestre{
+        width: 500px;
+    }
+
+    .repos{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .content_title{
+        font-size: 23px;
+        line-height: 25px;
+        padding: 7px;
+    }
+
+    .content_principal{
+        font-size: 17px;
+        line-height: 25px;
+        width: 340px;
+    }
+
+    .repositorio_semestre{
+        width: 375px;
+    }
+
+    .repos_content{
+        height: 80px;
+    }
+
+    .repos{
+        width: 170px;
+        height: 45px;
+    }
+
+    .semestre{
+        font-size: 12px;
+    }
+
+    @keyframes efecto {
+        from {font-size: 12px;}
+        to {font-size: 13px;}
+    }
+    
+    .semestre a:hover{
+        animation-name: efecto;
+        animation-duration: 1s;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container-fluid{
+        display: none;
+    }
+}

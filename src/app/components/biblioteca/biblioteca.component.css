@@ -1,0 +1,111 @@
+.container-fluid {
+    width: 100%;
+    height: 680px;
+    background-image: url("../../../assets/img/biblioteca.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo_biblioteca {
+    width: 100%;
+    height: 230px;
+    background-color: rgba(2, 45, 109, 0.49);
+    position: relative;
+    top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+    color: whitesmoke;
+}
+
+.container_button {
+    width: 100%;
+    height: 320px;
+    position: relative;
+    top: 130px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button_biblioteca {
+    width: 730px;
+    height: 140px;
+    background-color: rgba(2, 45, 109, 0.85);
+    border-radius: 27px;
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-group {
+    width: 600px;
+}
+
+.content_biblioteca {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .button_biblioteca {
+        width: 650px;
+    }
+    .input-group {
+        width: 520px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .logo_title {
+        font-size: 35px;
+    }
+    .button_biblioteca {
+        width: 500px;
+    }
+    .input-group {
+        width: 370px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .logo_biblioteca {
+        height: 200px;
+        top: 100px;
+    }
+    .container_button {
+        top: 100px;
+        height: 380px;
+    }
+    .button_biblioteca {
+        width: 350px;
+        height: 100px;
+    }
+    .input-group {
+        width: 300px;
+    }
+    .content_biblioteca {
+        width: 260px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 100px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        text-align: center;
+        color: white;
+    }
+}
