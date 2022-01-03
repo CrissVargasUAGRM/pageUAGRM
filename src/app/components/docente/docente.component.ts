@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Docente } from 'src/app/models/docente';
 
 @Component({
   selector: 'app-docente',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DocenteComponent implements OnInit {
 
+  @Input() docentes: Docente[] = [
+    {
+      img: "",
+      nombre: ""
+    }
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.docentes);
   }
 
 }

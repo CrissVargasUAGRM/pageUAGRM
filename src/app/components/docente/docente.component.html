@@ -1,1 +1,17 @@
-<p>docente works!</p>
+<div class="container-fluid px-0">
+    <div class="container_title">
+        <p>Plantel Docente</p>
+    </div>
+    <div class="container_docentes">
+        <div class="container_cards">
+            <div class="card_docente" *ngFor="let doc of docentes">
+                <div class="card_img">
+                    <img [src]="doc.img" alt="Docente">
+                </div>
+                <div class="card_name">
+                    <p>{{doc.nombre}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
