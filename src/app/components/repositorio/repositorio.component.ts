@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { materiasFac } from '../../constants/materias';
+import { Materias } from '../../models/materias';
 
 @Component({
   selector: 'app-repositorio',
@@ -7,42 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RepositorioComponent implements OnInit {
 
-  public semestres: any[] = [
-    {
-      semestre: "Primer Semestre"
-    },
-    {
-      semestre: "Segundo Semestre"
-    },
-    {
-      semestre: "Tercer Semestre"
-    },
-    {
-      semestre: "Cuarto Semestre"
-    },
-    {
-      semestre: "Quinto Semestre"
-    },
-    {
-      semestre: "Sexto Semestre"
-    },
-    {
-      semestre: "Septimo Semestre"
-    },
-    {
-      semestre: "Octavo Semestre"
-    },
-    {
-      semestre: "Noveno Semestre"
-    },
-    {
-      semestre: "Materias Electivas"
-    }
-  ];
+  public semestres: Materias[] = materiasFac;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  goSemestre(id: string){
+    document.getElementById(id)?.scrollIntoView({behavior: 'smooth'});
   }
 
 }

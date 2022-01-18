@@ -1,0 +1,24 @@
+<app-repositorio></app-repositorio>
+<div class="container-fluid px-0">
+    <div class="container_semestres mt-4">
+        <div class="container_content" *ngFor="let materia of materias" id="{{materia.id}}">
+            <div class="container_title">
+                <p>{{materia.title}}</p>
+            </div>
+            <div class="container_materias">
+                <div class="container_subjects d-flex flex-wrap">
+                    <div class="subject" *ngFor="let subject of materia.materiasSemestre">
+                        <ul class="menu-horizontal">
+                            <li>
+                                <p>{{subject.materia}}</p>
+                                    <ul class="menu-vertical">
+                                        <li *ngFor="let link of subject.links"><a href="{{link.enlace}}">♦ {{link.name}}</a></li>
+                                    </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

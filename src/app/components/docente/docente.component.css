@@ -1,0 +1,69 @@
+.container-fluid{
+    width: 100%;
+    background-color: rgba(0, 125, 80, 0.71);
+    background-image: url("../../../assets/img/vector_docentes.png");
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+.container_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 35px;
+    color: white;
+}
+
+.container_docentes{
+    width: 100%;
+    height: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_cards{
+    width: 90%;
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.card_docente{
+    width: 118px;
+    height: 206px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.card_img{
+    
+}
+
+.card_name{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    color: white;
+}

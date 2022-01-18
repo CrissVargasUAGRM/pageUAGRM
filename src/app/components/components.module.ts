@@ -13,6 +13,7 @@ import { MisionvisionComponent } from './misionvision/misionvision.component';
 import { MallaComponent } from './malla/malla.component';
 import { BibliotecaComponent } from './biblioteca/biblioteca.component';
 import { RepositorioComponent } from './repositorio/repositorio.component';
+import { MateriasComponent } from './materias/materias.component';
 
 
 
@@ -29,7 +30,8 @@ import { RepositorioComponent } from './repositorio/repositorio.component';
     MisionvisionComponent,
     MallaComponent,
     BibliotecaComponent,
-    RepositorioComponent
+    RepositorioComponent,
+    MateriasComponent
   ],
   imports: [
     CommonModule,
@@ -47,7 +49,8 @@ import { RepositorioComponent } from './repositorio/repositorio.component';
     MisionvisionComponent,
     MallaComponent,
     BibliotecaComponent,
-    RepositorioComponent
+    RepositorioComponent,
+    MateriasComponent
   ]
 })
 export class ComponentsModule { }
