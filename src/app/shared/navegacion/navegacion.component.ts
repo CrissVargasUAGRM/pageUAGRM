@@ -12,4 +12,8 @@ export class NavegacionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  toNotices(){
+    document.getElementById("noticias")?.scrollIntoView({behavior: 'smooth'});
+  }
 }
