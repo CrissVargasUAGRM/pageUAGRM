@@ -1,33 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {autoridadRoot} from '../../constants/autoridades-root';
-@Component({
-  selector: 'app-consejo',
-  templateUrl: './consejo.component.html',
-  styleUrls: ['./consejo.component.css'],
-})
-export class ConsejoComponent implements OnInit {
-  nodes: any[] = [];
 
-  constructor() {}
-
-  ngOnInit(): void {
-    this.nodes = [this.setNodes(autoridadRoot.name, autoridadRoot.subJobs)];
-    console.log(this.nodes);
-  }
-
-  private setNodes(name: string, subJobs: any[]): any {
-    return {
-      name: name,
-      cssClass: 'ngx-org-head',
-      image: "https://cdn.discordapp.com/attachments/905257279547392001/934097130438676550/wini.png",
-      title: name,
-      childs: subJobs.length ? subJobs.map(({name, subJobs}) => {
-        return this.setNodes(name, subJobs)
-      }) : [],
-    };
-  }
-
-  /* nodes: any = [
+nodes: any = [
     {
       name: 'Sundar Pichai',
       cssClass: 'ngx-org-ceo',
@@ -202,5 +174,4 @@ export class ConsejoComponent implements OnInit {
         }
       ]
     }
-  ]; */
-}
+  ];

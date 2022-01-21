@@ -1,0 +1,11 @@
+.container-fluid{
+    padding-left: 100px;
+    padding-right: 100px;
+    background: #E5E5E5;
+}
+
+.ngx-org-image{
+    background-position: center !important;
+    background-size: contain !important;
+    display: none;
+}

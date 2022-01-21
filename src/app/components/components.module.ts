@@ -15,7 +15,7 @@ import { BibliotecaComponent } from './biblioteca/biblioteca.component';
 import { RepositorioComponent } from './repositorio/repositorio.component';
 import { MateriasComponent } from './materias/materias.component';
 
-
+import { NgxOrgChartModule } from 'ngx-org-chart'; 
 
 @NgModule({
   declarations: [
@@ -35,7 +35,8 @@ import { MateriasComponent } from './materias/materias.component';
   ],
   imports: [
     CommonModule,
-    SwiperModule
+    SwiperModule,
+    NgxOrgChartModule
   ],
   exports: [
     CarruselComponent,
