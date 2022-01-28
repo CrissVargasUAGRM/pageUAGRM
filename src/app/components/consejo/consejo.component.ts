@@ -18,8 +18,8 @@ export class ConsejoComponent implements OnInit {
   private setNodes(name: string, subJobs: any[]): any {
     return {
       name: name,
-      cssClass: 'ngx-org-head',
-      image: "https://cdn.discordapp.com/attachments/905257279547392001/934097130438676550/wini.png",
+      cssClass: 'ngx-org-ceo',
+      /* image: "https://cdn.discordapp.com/attachments/905257279547392001/934097130438676550/wini.png", */
       title: name,
       childs: subJobs.length ? subJobs.map(({name, subJobs}) => {
         return this.setNodes(name, subJobs)

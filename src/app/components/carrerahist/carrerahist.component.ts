@@ -14,7 +14,8 @@ export class CarrerahistComponent implements OnInit {
     sigle: "",
     imagen: "",
     texto1: "",
-    texto2: ""
+    texto2: "",
+    jefe: ""
   };
 
   constructor() { }

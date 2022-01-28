@@ -4,4 +4,5 @@ export interface Carrera {
     imagen: string;
     texto1: string;
     texto2: string;
+    jefe: string;
 }
