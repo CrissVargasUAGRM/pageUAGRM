@@ -5,9 +5,12 @@ import { Injectable } from '@angular/core';
 })
 export class ApifacebookService {
 
-  public tokenFB: string = "";  /* TOKEN DE PAGINA FACEBOOK SE NECESITA UNO CADA MEDIA HORA */
+  public tokenFB: string = "";  
+  /* TOKEN DE PAGINA FACEBOOK SE NECESITA UNO CADA MEDIA HORA */
 
-  public path: string = "";  /* DIRECCION A DONDE HACER LA CONSULTA A GRAPH FACEBOOK API */
+  public path: string = "";  
+  /* DIRECCION A DONDE HACER LA CONSULTA A GRAPH FACEBOOK API */
 
   constructor() { }
 }
+    
