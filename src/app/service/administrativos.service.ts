@@ -5,7 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class AdministrativosService {
 
-  public path: string = "";  /* URL DE LA API PARA LAS AUTORIDADES */
+  public path: string = "";  
+  /* URL DE LA API PARA LAS AUTORIDADES */
 
   constructor() { }
 
