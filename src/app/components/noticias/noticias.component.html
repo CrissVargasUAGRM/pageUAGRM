@@ -3,6 +3,17 @@
     <h1>noticias</h1>
   </div>
   <div class="container__carousel">
-    
+    <div class="carousel__btn">
+      <i class="fas fa-chevron-left" (click)="setBack()"></i>
+      <i class="fas fa-chevron-right" (click)="setNext()"></i>
+    </div>
+    <div class="container__content">
+      <ng-container *ngFor="let item of itemsNoc">
+        <div class="container__item" 
+        [ngStyle]="{'margin-left': item.marginLeft + '%'}">
+          <img src="{{item.image}}" alt="noticia">
+        </div>
+      </ng-container>
+    </div>
   </div>
 </div>

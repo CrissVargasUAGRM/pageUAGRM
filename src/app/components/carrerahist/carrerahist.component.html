@@ -11,11 +11,17 @@
             </div>
 
             <div class="carrera_historia">
-                <div class="imagen_carrera">
-                    <div class="imagen">
-                        <img [src]="carrera.imagen" alt="">
+                <div class="container__jefe">
+                    <div class="imagen_carrera">
+                        <div class="imagen">
+                            <img [src]="carrera.imagen" alt="">
+                        </div>
+                    </div>
+                    <div class="nombre_jefe">
+                        <p>{{carrera.jefe}}</p>
                     </div>
                 </div>
+                
                 <div class="carrera_texto">
                     <div class="texto1">
                         <p>{{carrera.texto1}}</p>

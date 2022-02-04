@@ -55,7 +55,13 @@
 }
 
 .card_img{
-    
+    width: 100%;
+}
+
+.card_img img{
+    width: 108px;
+    height: 137px;
+    border-radius: 44px;
 }
 
 .card_name{

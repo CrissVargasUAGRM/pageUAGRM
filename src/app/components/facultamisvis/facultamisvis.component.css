@@ -61,3 +61,43 @@
     color: white;
     text-align: left;
 }
+
+@media screen and (max-width: 960px) {
+   .container__principal{
+       padding: 0;
+   }
+
+   .container__mision{
+       padding: 0;
+   }
+
+   .container__vision{
+       padding: 0;
+   }
+
+   .title{
+       font-size: 25px;
+   }
+
+   .content{
+       font-size: 16px;
+   }
+}
+
+@media screen and (max-width: 576px) {
+    .container__mision{
+        width: 270px;
+    }
+
+    .container__vision{
+        width: 270px;
+    }
+
+    .title{
+        font-size: 20px;
+    }
+
+    .content{
+        font-size: 14px;
+    }
+}

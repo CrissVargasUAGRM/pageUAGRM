@@ -1,0 +1,10 @@
+.container-fluid{
+    background: #E5E5E5;
+    overflow: scroll;
+}
+
+@media screen and (max-width: 992px) {
+    /* .container-fluid{
+        display: none;
+    } */
+}

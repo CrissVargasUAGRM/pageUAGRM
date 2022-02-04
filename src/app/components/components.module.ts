@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { CarruselComponent } from './carrusel/carrusel.component';
 import { NoticiasComponent } from './noticias/noticias.component';
 import { PregfrecComponent } from './pregfrec/pregfrec.component';
-import { SwiperModule } from 'swiper/angular';
 import { FacultadComponent } from './facultad/facultad.component';
 import { FacultamisvisComponent } from './facultamisvis/facultamisvis.component';
 import { ConsejoComponent } from './consejo/consejo.component';
@@ -15,7 +14,10 @@ import { BibliotecaComponent } from './biblioteca/biblioteca.component';
 import { RepositorioComponent } from './repositorio/repositorio.component';
 import { MateriasComponent } from './materias/materias.component';
 
+import { NgxOrgChartModule } from 'ngx-org-chart';
+import { CarruselnoticiasComponent } from './carruselnoticias/carruselnoticias.component';
 
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -31,11 +33,13 @@ import { MateriasComponent } from './materias/materias.component';
     MallaComponent,
     BibliotecaComponent,
     RepositorioComponent,
-    MateriasComponent
+    MateriasComponent,
+    CarruselnoticiasComponent
   ],
   imports: [
     CommonModule,
-    SwiperModule
+    SwiperModule,
+    NgxOrgChartModule
   ],
   exports: [
     CarruselComponent,
@@ -50,7 +54,8 @@ import { MateriasComponent } from './materias/materias.component';
     MallaComponent,
     BibliotecaComponent,
     RepositorioComponent,
-    MateriasComponent
+    MateriasComponent,
+    CarruselnoticiasComponent
   ]
 })
 export class ComponentsModule { }
