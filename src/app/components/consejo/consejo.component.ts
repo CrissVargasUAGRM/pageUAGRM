@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {autoridadRoot} from '../../constants/autoridades-root';
+
+import { autoridad } from "../../constants/autoridad-facultad";
 @Component({
   selector: 'app-consejo',
   templateUrl: './consejo.component.html',
@@ -11,7 +13,7 @@ export class ConsejoComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    this.nodes = [this.setNodes(autoridadRoot.name, autoridadRoot.subJobs)];
+    this.nodes = [this.setNodes(autoridad.name, autoridad.subJobs)];
     console.log(this.nodes);
   }
 
